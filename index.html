@@ -17,9 +17,20 @@
                 </div>
                 <div class="passwordForm" id="passwordForm">
                     <label for="length">Numero de caracteres de la contraseña</label>
-                    <input type="number" id="length" name="length" min="12" max="50" value="12">
-                    <button type="button">Generar  </button>
+                    <input type="number" id="length" name="length" min="12" max="50" value="">
+                    <button name="button" type="button" id="gen">Generar</button>
                     <div class="passResult" id="passResult"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="list-container">
+                <div class="title"><h2>Añade tu enlace de interes</h2></div>
+                <div class="form">
+                    <input type="text" placeholder="Nombre del enlace">
+                    <input type="text" placeholder="Pega aqui tu url">
+                    <button name="button" type="button" id="add-link"> Añadir Enlace</button>
+                    <ul></ul>
                 </div>
             </div>
         </section>
@@ -28,4 +39,5 @@
     
 </body>
 <script src="/JS/main.js"></script>
+<script src = "/JS/passGen.js"></script>
 </html>

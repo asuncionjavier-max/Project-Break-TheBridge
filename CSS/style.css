@@ -5,6 +5,8 @@ body {
     background-image: url(../ASSETS/8machine-_-LhNDEs4MP5w-unsplash.jpg);
     background-attachment: fixed;
     min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     transition: background-image 1s ease-in-out;
     display: flex;

@@ -1,0 +1,26 @@
+const upper = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+const lower ='abcdefghijklmnñopqrstuvwxyz';
+const number ='123456789';
+const characters ='!@#$%^&*()-_=+'; 
+const gen = document.getElementById('gen');
+const result = document.getElementById('passResult');
+
+gen.addEventListener('click', ()=>{
+    const allCharacters = upper + lower + number + characters;
+    let password = ''
+    const inputName = document.getElementById('length')
+    const valor = inputName.value;
+if(valor < 12 || valor > 50){
+        result.innerHTML = `<h2>ha habido un problema</h2>`
+    }
+    else {
+        for(let i = 0; i <= valor ; i++){
+        
+            const passGen = Math.floor(Math.random() * allCharacters.length)
+            password += allCharacters[passGen]
+                }
+        
+                result.innerHTML = `<h2>${password}</h2>`
+            }
+        })
+    
