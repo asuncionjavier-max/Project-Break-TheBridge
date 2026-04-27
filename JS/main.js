@@ -1,6 +1,5 @@
 const body = document.body
 const imagenes = [
-    '/ASSETS/machine-_-LhNDEs4MP5w-unsplash.jpg',
     '/ASSETS/brian-mcgowan-nqX-s99wSvI-unsplash.jpg',
     '/ASSETS/evgeniya-pron-aW_hvFsBlXs-unsplash.jpg',
     '/ASSETS/flyd-3f_knnjHFIg-unsplash.jpg',
