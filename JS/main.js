@@ -17,4 +17,3 @@ const imagenSelect = imagenes[imgRandom]
 body.style.backgroundImage = `url(${imagenes[imgRandom]})`
  }
 setInterval(randomizeImg, 10000)
-
