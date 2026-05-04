@@ -1,0 +1,1 @@
+const wheather = fetch('http://api.weatherapi.com/v1')
