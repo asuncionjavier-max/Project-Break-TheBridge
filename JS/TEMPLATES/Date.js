@@ -41,11 +41,9 @@ minuto = addZero(minuto)
 segundo = addZero(segundo)
 reloj.innerHTML = `${hora}:${minuto}:${segundo}`
 }, 1000)
-
 if(new Date >= 21){
 frase.innerHTML = 'Buenas noches ! No son horas de seguir programando ves pensando en irte a dormir'
-}
-
+} 
 if (new Date >= 7 ){
     frase.innerHTML = 'Buenos dias ! Cafelito y a programar que esos commits no se van a hacer solos'
 }
