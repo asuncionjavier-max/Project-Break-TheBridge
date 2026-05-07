@@ -1,5 +1,6 @@
 *{
     color: white;
+    font-size: 25px;
 }
 body {
     background-image: url(../ASSETS/8machine-_-LhNDEs4MP5w-unsplash.jpg);
@@ -10,14 +11,22 @@ body {
     background-size: cover;
     transition: background-image 1s ease-in-out;
     display: flex;
+    justify-content: center;
 }
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 30px;
     border-radius: 15px;
     background-color: rgba(27, 27, 27, 0.3); /* Necesita transparencia */
     backdrop-filter: blur(4px);
+    margin-top: 10px;
+    transition: background-color 1s; ;
+}
+.form:hover{
+background-color:rgba(0, 0, 0, 0.8);
+backdrop-filter: blur(10px);
 }
 
 .passwordForm{
@@ -35,14 +44,35 @@ button{
     padding: 10px;
     border-radius: 5px;
     border: none;
+    transition: hover 1s;
 
 }
 
+button:hover{
+    background-color: rgb(3, 3, 90);
+}
 .card{
     background-color: rgba(27, 27, 27, 0.3);
     backdrop-filter: blur(4px);
     padding: 10px;
     border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+ 
+.clock-container{
+    font-size: 25px;
+}
+#digital-clock{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.clima-container{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 400px;
+    height: 400px;
 }

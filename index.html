@@ -16,6 +16,7 @@
                 <div class="passwordForm" id="passwordForm">
                     <label for="length">Numero de caracteres de la contraseña</label>
                     <input type="number" id="length" name="length" min="12" max="50" value="">
+                    <br>
                     <button name="button" type="button" id="gen">Generar</button>
                     <div class="passResult" id="passResult"></div>
                 </div>
@@ -30,15 +31,28 @@
                     <input type="text" id="add-url" name="url" required placeholder="Pega aqui tu url" value="">
                     <br>
                     <button name="button" type="button" id="add-link"> Añadir Enlace</button>
+                    <ul class="url-list" id="url-list"></ul>
                 </div>
-                <ul class="url-list" id="url-list"></ul>
             </div>
         </section>
         <section>
             <div class="clock-container">
-                <div id="digital-clock"></div>
-                <div id="digital-date"></div>
-                <div id="digital-frase"></div>
+                
+                <div class="form" id="digital-clock"></div>
+                <div class="form" id="digital-date"></div>
+                <div class="form" id="digital-frase"></div>
+            </div>
+        </section>
+        <section>
+            <div class="clima-container" id="clima-container">
+                <h2 id="ciudad-pais"></h2>
+                <p id="temperatura">temperatura: </p>
+                <img id="icon-clima" src="" alt="">
+                <hr>
+                <h3>Tiempo por horas</h3>
+                <hr>
+                <div id="time-horas"></div>
+                <p id="descript"></p>
             </div>
         </section>
     </main>
@@ -48,4 +62,5 @@
 <script src = "/JS/passGen.js"></script>
 <script src="/JS/addLink.js"></script>
 <script src="/JS/TEMPLATES/Date.js"></script>
+<script src="/JS/TEMPLATES/Weather.js"></script>
 </html>

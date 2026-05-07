@@ -39,19 +39,24 @@ let segundo = calendar.getSeconds()
 hora = addZero(hora)
 minuto = addZero(minuto)
 segundo = addZero(segundo)
+
+if(hora >= 21){
+    frase.innerHTML = 'Buenas noches ! No son horas de seguir programando deberías irte a dormir'
+} 
+
+else if (hora >= 17 ){
+    frase.innerHTML = 'Buenas tardes ! No todo va a ser programar, un poco de gym o socializar tampoco esta mal'
+}
+else if (hora >= 13 ){
+    frase.innerHTML = 'Hora de comer ! Te vendría bien descansar un poco'
+}
+
+else if (hora >= 7 ){
+    frase.innerHTML = 'Buenos dias ! Cafelito y a programar esos commits no se van a hacer solos'
+}
 reloj.innerHTML = `${hora}:${minuto}:${segundo}`
 }, 1000)
-if(new Date >= 21){
-frase.innerHTML = 'Buenas noches ! No son horas de seguir programando ves pensando en irte a dormir'
-} 
-if (new Date >= 7 ){
-    frase.innerHTML = 'Buenos dias ! Cafelito y a programar que esos commits no se van a hacer solos'
-}
-
-if (new Date >= 17 ){
-    frase.innerHTML = 'Buenas tardes ! No todo va a ser programar, un poco de gym o socializar tampoco esta de mas'
-}
-
 } 
 
 relojMovement()
+
