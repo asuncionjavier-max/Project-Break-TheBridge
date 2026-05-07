@@ -1,3 +1,8 @@
+import { relojMovement } from "./TEMPLATES/Date.js"
+import { getClima } from "./TEMPLATES/Weather.js"
+import {initLinks} from "./addLink.js"
+import { passGenerator } from "./passGen.js"
+
 const body = document.body
 const imagenes = [
     '/ASSETS/brian-mcgowan-nqX-s99wSvI-unsplash.jpg',
@@ -17,3 +22,8 @@ const imagenSelect = imagenes[imgRandom]
 body.style.backgroundImage = `url(${imagenes[imgRandom]})`
  }
 setInterval(randomizeImg, 10000)
+
+relojMovement()
+getClima('Madrid')
+initLinks()
+passGenerator()
