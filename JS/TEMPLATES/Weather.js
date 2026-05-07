@@ -1,4 +1,4 @@
-export async function getClima(ciudad){
+async function getClima(ciudad){
     const key = '546cedeac0ff4190a19202648261704'
     const wheather = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${ciudad}&days=1&aqi=no`
 

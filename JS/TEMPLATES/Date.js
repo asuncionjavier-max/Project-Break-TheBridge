@@ -1,4 +1,4 @@
-export function relojMovement (){
+function relojMovement (){
 
 const reloj = document.getElementById('digital-clock')
 const fecha = document.getElementById('digital-date')

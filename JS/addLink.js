@@ -1,5 +1,4 @@
 // localStorage.clear()
-export function initLinks(){
 const linkName = document.getElementById('link-name')
 const url = document.getElementById('add-url')
 const btnLink = document.getElementById('add-link')
@@ -39,4 +38,3 @@ btnLink.addEventListener('click', (e) => {
     saveLink()
 
 })
-}

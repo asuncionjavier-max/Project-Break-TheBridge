@@ -1,5 +1,3 @@
-export function passGenerator(){
-
 const upper = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
 const lower ='abcdefghijklmnñopqrstuvwxyz';
 const number ='123456789';
@@ -25,5 +23,3 @@ if(valor < 12 || valor > 50){
                 result.innerHTML = `<h2>Contraseña generada:<br>${password}</h2>`
             }
         })
-    }
-    
