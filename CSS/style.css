@@ -13,6 +13,12 @@ body {
     display: flex;
     justify-content: center;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 .form{
     display: flex;
     flex-direction: column;

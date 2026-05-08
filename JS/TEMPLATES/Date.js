@@ -54,7 +54,7 @@ else if (hora >= 13 ){
 else if (hora >= 7 ){
     frase.innerHTML = 'Buenos dias ! Cafelito y a programar esos commits no se van a hacer solos'
 }
-reloj.innerHTML = `${hora}:${minuto}:${segundo}`
+reloj.innerHTML = `⏰ ${hora}:${minuto}:${segundo}`
 }, 1000)
 } 
 

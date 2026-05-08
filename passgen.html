@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard by Javier Asuncion</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <main>
+      <nav>
+            <a href="index.html">🏠</a>
+            <a href="time.html">⏰</a>
+            <a href="passgen.html">🔒</a>
+            <a href="addlink.html">🔗</a>
+            <a href="weather.html">⛅</a>
+        </nav>
+
+        <section class="pass-container">    
+            <div class="title"><h2>Crea tu contraseña segura 🔒</h2></div>
+            <div class="form">
+                <div class="passwordForm" id="passwordForm">
+                    <label for="length">Numero de caracteres de la contraseña</label>
+                    <input type="number" id="length" name="length" min="12" max="50" value="">
+                    <br>
+                    <button name="button" type="button" id="gen">Generar</button>
+                    <div class="passResult" id="passResult"></div>
+                </div>
+            </div>
+        </section>
+        </main>
+</body>
+<script src="./JS/main.js"></script>
+<script src="./JS/passGen.js"></script>
+</html>

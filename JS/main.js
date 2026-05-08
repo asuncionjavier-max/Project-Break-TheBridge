@@ -14,6 +14,7 @@ const imagenes = [
     './ASSETS/sandro-katalina-k1bO_VTiZSs-unsplash.jpg',
     './ASSETS/salty-justice-NOMebOREvtc-unsplash.jpg',
     './ASSETS/digby-cheung-qyOvSz_lJEQ-unsplash.jpg',
+    './ASSETS/matthew-henry-VviFtDJakYk-unsplash.jpg',
 ]
 
 function randomizeImg(){

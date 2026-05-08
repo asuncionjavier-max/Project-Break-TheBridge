@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard by Javier Asuncion</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <main>
+      <nav>
+            <a href="index.html">🏠</a>
+            <a href="time.html">⏰</a>
+            <a href="passgen.html">🔒</a>
+            <a href="addlink.html">🔗</a>
+            <a href="weather.html">⛅</a>
+        </nav>
+  <section>
+            <div class="clima-container" id="clima-container"> 
+                <h2 id="ciudad-pais"></h2>
+                <p id="temperatura">temperatura: </p>
+                <img id="icon-clima" src="" alt="">
+                <hr>
+                <h3>Tiempo por horas</h3>
+                <hr>
+                <div id="time-horas"></div>
+                <p id="descript"></p>
+            </div>
+        </section>  
+    </main>
+</body>
+<script src="./JS/main.js"></script>
+<script src="./JS/TEMPLATES/Weather.js"></script>
+</html>
