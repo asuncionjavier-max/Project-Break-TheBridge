@@ -1,9 +1,24 @@
-async function getClima(ciudad){
+const btnCity = document.getElementById('send-city')
+const inputCity = document.getElementById('value-city')
+
+btnCity.addEventListener('click', async function getClima(){
+    const cityName = inputCity.value
+
+    if (!cityName) {
+        alert("Por favor, escribe una ciudad");
+        return;
+    }
+
     const key = '546cedeac0ff4190a19202648261704'
-    const wheather = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${ciudad}&days=1&aqi=no`
+    const wheather = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${cityName}&days=1&aqi=no`
 
         const res = await fetch(wheather)
         const data = await res.json()
+
+        if (data.error) {
+            alert("Ciudad no encontrada");
+            return;
+        }
         
         const city =document.getElementById('ciudad-pais')
         const temperatura =document.getElementById('temperatura')
@@ -20,7 +35,7 @@ async function getClima(ciudad){
         <ul>
         <li><img src="https:${hora.condition.icon}">
         <p>Hora: ${solohora}</p>
-        <p>Temperatura: ${hora.temp_c}</p>
+        <p>Temperatura: ${hora.temp_c}ºC</p>
         <p>Probabilidad de lluvia: ${hora.chance_of_rain}%</p>
         </li>
         <hr>
@@ -35,5 +50,5 @@ async function getClima(ciudad){
 
         console.log(data)
 }
-getClima('Madrid')
+)
 
