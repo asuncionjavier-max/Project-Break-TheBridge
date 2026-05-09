@@ -1,14 +1,14 @@
 # Dashboard Personalizable - Project Break The Bridge
 Hola!! 
 
-Este es un proyecto realizado para practicar y consolidar mis conocimientos de HTML, CSS y JavaScript.
+* Este es un proyecto realizado para practicar y consolidar mis conocimientos de HTML, CSS y JavaScript.
 
-La idea es crear un panel de control funcional capaz de generar:
-Imagenes aleatorias en el fondo de pantalla cada 15s con un array y Math.floor(Math.random())
-Contraseñas aleatorias en las que tu decidas cuantos caracteres quieres y que tengan mayusculas, minusculas, numeros y caracteres especiales con Math.floor(Math.random()).
-Una librería donde guardar links de interes capaz de mantenerlos independientemente de cerrar la ventana con LocalStorage.
-Añadír un reloj y ponerlo en funcionamiento con new Date y SetInterval.
-Consumir datos reales de una API y añadir una barra de busqueda donde puedas buscar el tiempo de la ciudad que a ti se te ocurra.
+* La idea es crear un panel de control funcional capaz de generar:
+* Imagenes aleatorias en el fondo de pantalla cada 15s con un array y Math.floor(Math.random())
+* Contraseñas aleatorias en las que tu decidas cuantos caracteres quieres y que tengan mayusculas, minusculas, numeros y caracteres especiales con Math.floor(Math.random()).
+* Una librería donde guardar links de interes capaz de mantenerlos independientemente de cerrar la ventana con LocalStorage.
+* Añadír un reloj y ponerlo en funcionamiento con new Date y SetInterval.
+* Consumir datos reales de una API y añadir una barra de busqueda donde puedas buscar el tiempo de la ciudad que a ti se te ocurra.
 
 
 ## 🛠️ Tecnologías utilizadas
