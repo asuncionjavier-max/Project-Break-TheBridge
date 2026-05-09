@@ -1,9 +1,15 @@
 // localStorage.clear()
+
 const linkName = document.getElementById('link-name')
 const url = document.getElementById('add-url')
 const btnLink = document.getElementById('add-link')
 
+
+// Variable que recoje los links guardados en LocalStorage
 let misLinks = JSON.parse(localStorage.getItem('links')) || []
+
+
+//  Mostrar Links en el DOM
 
 function saveLink(){
     const link = document.getElementById('url-list')
@@ -16,8 +22,10 @@ function saveLink(){
     
 });
 }
-
+// Mostrar los Links ya guardados
 saveLink()
+
+// Guardar en localStorage
 
 btnLink.addEventListener('click', (e) => {
     e.preventDefault()

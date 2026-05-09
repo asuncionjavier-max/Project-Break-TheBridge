@@ -4,7 +4,7 @@ const reloj = document.getElementById('digital-clock')
 const fecha = document.getElementById('digital-date')
 const frase = document.getElementById('digital-frase')
 
-
+// Añadimos el 0 en los primeros segundos/minuto/horas en cifras inferiores a 10 para dar mejor UX 
 function addZero(time){
     if(time < 10){
         return '0' + time
@@ -47,6 +47,7 @@ if(hora >= 21){
 else if (hora >= 17 ){
     frase.innerHTML = 'Buenas tardes ! No todo va a ser programar, un poco de gym o socializar tampoco esta mal'
 }
+
 else if (hora >= 13 ){
     frase.innerHTML = 'Hora de comer ! Te vendría bien descansar un poco'
 }

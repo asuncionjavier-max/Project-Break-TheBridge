@@ -2,13 +2,14 @@ const btnCity = document.getElementById('send-city')
 const inputCity = document.getElementById('value-city')
 
 btnCity.addEventListener('click', async function getClima(){
+    // VALOR DEL FORM
     const cityName = inputCity.value
 
     if (!cityName) {
         alert("Por favor, escribe una ciudad");
         return;
     }
-
+// API Y APIKEY
     const key = '546cedeac0ff4190a19202648261704'
     const wheather = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${cityName}&days=1&aqi=no`
 
@@ -19,6 +20,7 @@ btnCity.addEventListener('click', async function getClima(){
             alert("Ciudad no encontrada");
             return;
         }
+        // DOM
         
         const city =document.getElementById('ciudad-pais')
         const temperatura =document.getElementById('temperatura')
@@ -47,8 +49,6 @@ btnCity.addEventListener('click', async function getClima(){
         temperatura.innerHTML = `Temperatura: ${data.current.temp_c}`
         icon.src = `https:${data.current.condition.icon}` 
         horas.innerHTML = hours;
-
-        console.log(data)
 }
 )
 
