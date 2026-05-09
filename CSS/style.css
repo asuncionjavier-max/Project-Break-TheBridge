@@ -31,6 +31,7 @@ nav{
     background-color: rgba(27, 27, 27, 0.3); /* Necesita transparencia */
     backdrop-filter: blur(4px);
     margin-top: 10px;
+    margin-bottom: 20px;
     transition: background-color 1s; ;
 }
 .form:hover{
@@ -80,8 +81,9 @@ button:hover{
 }
 
 .clima-container{
-    overflow-x: scroll;
+    background-color: rgba(27, 27, 27, 0.3);
+    backdrop-filter: blur(4px);
     overflow-y: scroll;
-    width: 400px;
+    width: auto;
     height: 400px;
 }

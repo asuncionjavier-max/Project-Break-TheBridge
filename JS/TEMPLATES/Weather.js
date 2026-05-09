@@ -21,7 +21,7 @@ btnCity.addEventListener('click', async function getClima(){
             return;
         }
         // DOM
-        
+
         const city =document.getElementById('ciudad-pais')
         const temperatura =document.getElementById('temperatura')
         const icon =document.getElementById('icon-clima')
