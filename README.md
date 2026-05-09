@@ -1,7 +1,7 @@
 # Dashboard Personalizable - Project Break The Bridge
 Hola!! 
 
-* Este es un proyecto realizado para practicar y consolidar mis conocimientos de HTML, CSS y JavaScript.
+Este es un proyecto realizado para practicar y consolidar mis conocimientos de HTML, CSS y JavaScript.
 
 * La idea es crear un panel de control funcional capaz de generar:
 * Imagenes aleatorias en el fondo de pantalla cada 15s con un array y Math.floor(Math.random())
