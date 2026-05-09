@@ -19,9 +19,7 @@ nav{
     font-size: 30px;
     background-color: rgba(27, 27, 27, 0.3); /* Necesita transparencia */
     backdrop-filter: blur(4px);
-    position: sticky;
-    top: 0px;
-    z-index: 101;
+    position: s;
     margin-bottom: 20px;
 }
 .form{
